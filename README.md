@@ -1,15 +1,13 @@
 # idumzaes/cups_airprint
-
-Built from arm64v8/ubuntu
+CUPS Airprint Server built from arm64v8/ubuntu
 
 ## Setup
 ### Volumes:
-`/config`: where the persistent printer configs will be stored.
-
+`/config`: where the persistent printer configs will be stored.<br>
 `/services`: Mapped to `/etc/avahi/services`, where Avahi service files will be generated.
 ### Variables:
-`CUPSADMIN`: the CUPS admin user you want created
-`CUPSPASSWORD`: the password for the CUPS admin user
+`CUPSADMIN`: the CUPS admin user you want created.<br>
+`CUPSPASSWORD`: the password for the CUPS admin user.
 ### Ports:
 `631`: the TCP port for CUPS must be exposed
 
