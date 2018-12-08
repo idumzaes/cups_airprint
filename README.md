@@ -4,7 +4,8 @@ Built from arm64v8/ubuntu
 
 ## Setup
 ### Volumes:
-`/config`: where the persistent printer configs will be stored
+`/config`: where the persistent printer configs will be stored.
+
 `/services`: Mapped to `/etc/avahi/services`, where Avahi service files will be generated.
 ### Variables:
 `CUPSADMIN`: the CUPS admin user you want created
