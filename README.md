@@ -13,7 +13,7 @@ CUPS Airprint Server built from arm64v8/ubuntu
 
 ## Create and run container with:
 
-`docker run -d --name cups-airprint -e CUPSADMIN=admin -e CUPSPASSWORD=pass -v ~/cups-airprint/config:/config -v /etc/avahi/services:/services -p 631:631 idumzaes/cups_airprint`
+`docker run -dit --restart unless-stopped --name cups-airprint -e CUPSADMIN=admin -e CUPSPASSWORD=pass -v ~/cups-airprint/config:/config -v /etc/avahi/services:/services -p 631:631 idumzaes/cups_airprint`
 
 ### CUPS Web Config
 CUPS will be configurable at http://[diskstation]:631 using the CUPSADMIN/CUPSPASSWORD when you do something administrative.
