@@ -2,6 +2,7 @@ FROM arm64v8/debian
 
 # Install the packages we need. Avahi will be included
 RUN apt-get update && apt-get install -y \
+	brother-lpr-drivers-extra brother-cups-wrapper-extra \
 	cups \
 	cups-pdf \
 	inotify-tools \
